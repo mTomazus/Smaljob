@@ -5,6 +5,10 @@ class Templates extends Trongate {
         load('public', $data);
     }
 
+    function default($data) {
+        load('default', $data);
+    }
+
     function error_404($data) {
         load('error_404', $data);
     }

@@ -1,10 +1,10 @@
 <section class="container contact-us">
-    <h1>Get In Touch</h1>
+    <h1>Susisiekite</h1>
     <?php
     validation_errors();
     echo form_open($form_location);
     echo form_label('Your Name');
-    $input_attr['placeholder'] = 'Enter your name here';
+    $input_attr['placeholder'] = 'Įrašykite savo vardą';
     $input_attr['autocomplete'] = 'off';
     echo form_input('name', $name, $input_attr);
 
@@ -12,8 +12,8 @@
     $input_attr['placeholder'] = 'Enter your email address here';
     echo form_email('email_address', $email_address, $input_attr);
 
-    echo form_label('Your Message');
-    $input_attr['placeholder'] = 'Use this space to enter your message';
+    echo form_label('Darbų apimtis (glaustai)');
+    $input_attr['placeholder'] = 'Aprašykite darbų apimtį glaustai';
     $input_attr['rows'] = 5;
     echo form_textarea('message', $message, $input_attr);
 
@@ -21,7 +21,7 @@
     echo form_label($question);
     echo form_dropdown('answer', $options, $answer);
 
-    echo form_submit('submit', 'Submit');
+    echo form_submit('submit', 'Užsakyti');
     echo anchor(BASE_URL, 'Cancel', array('class' => 'button alt'));
 
     echo form_close();
@@ -30,6 +30,6 @@
 
 <style>
     .contact-us {
-        padding-bottom: 120px;
+        font-family: 'Marcellus', serif;
     }
 </style>

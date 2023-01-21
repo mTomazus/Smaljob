@@ -16,9 +16,9 @@
 */
 
 //The main config file
-define('BASE_URL', 'http://localhost:8080/');
+define('BASE_URL', 'http://localhost:8000/');
 define('ENV', 'dev');
-define('DEFAULT_MODULE', 'welcome');
-define('DEFAULT_CONTROLLER', 'Welcome');
+define('DEFAULT_MODULE', 'enquiries');
+define('DEFAULT_CONTROLLER', 'Enquiries');
 define('DEFAULT_METHOD', 'index');
 define('MODULE_ASSETS_TRIGGER', '_module');
